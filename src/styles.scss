@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Externals
+
+// Setup
+@import "./assets/scss/setup/variables";
+@import "./assets/scss/setup/functions";
+@import "./assets/scss/setup/mixins";
+
+// Basics
+@import "./assets/scss/basics/typography";
+@import "./assets/scss/basics/base";
+@import "./assets/scss/basics/helpers";
+@import "./assets/scss/basics/layout";
+@import "./assets/scss/basics/modals";
+@import "./assets/scss/basics/animations";
+
+// Views
+@import "./assets/scss/views/about";
+@import "./assets/scss/views/robot-details";
+@import "./assets/scss/views/robot-edit";
+
+// Components
+@import "./assets/scss/cmps/watcher-preview";
+@import "./assets/scss/cmps/app-header";
+@import "./assets/scss/cmps/nice-button";
+
+.feature {
+  margin: 3rem auto;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  max-width: max-content;
+  border-radius: 1rem;
+  background-color: #f3f3f3;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}

@@ -1,0 +1,16 @@
+<ul class="clean-list flex">
+    <li *ngFor="let watcher of watchers">
+        <img [src]="'../../../assets/imgs/watchers/' + watcher.imgIdx + '.png'">
+        <div>
+            <p>{{watcher.name}}</p>
+            <button (click)="onSelectWatcher(watcher._id)" class="button-1">Select</button>
+            <button (click)="onDeleteWatcher(watcher._id)" class="button-2">Delete</button>
+        </div>
+    </li>
+</ul>
+<div *ngIf="currSelected" class="screen">
+    <button (click)="currSelected = null" class="button-1">Exit</button>
+    <img [src]="'../../../assets/imgs/watchers/' + currSelected.imgIdx + '.png'">
+    <h1>{{currSelected.name}}</h1>
+    <p>{{currSelected.movies | json}}</p>
+</div>

@@ -1,0 +1,27 @@
+:host {
+  min-height: 70px;
+  background-color: #fbfbfb;
+  display: block;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.137);
+  .container {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main-nav {
+    .nav-links {
+      display: flex;
+      > *:not(:last-child) {
+        margin-inline-end: 1rem;
+      }
+      li {
+        cursor: pointer;
+        &:hover {
+          //   color: $clr1;
+        }
+      }
+    }
+  }
+}

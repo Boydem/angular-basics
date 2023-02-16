@@ -1,0 +1,9 @@
+<div (click)="toggleDarkMode()" [class.dark]="isDark" class="show-time-container">
+    <img [src]="'../../../assets/imgs/seasons/' + seasonName + '.png'">
+    <div class="meta">
+        <p class="clock">{{currentDate | date:'HH:mm:ss'}}</p>
+        <p>Current Date: {{currentDate | date:'dd/MM/yyyy'}}</p>
+        <p>Current Day: {{dayName}}</p>
+        <p style="text-transform: capitalize;">Current Season: {{seasonName}}</p>
+    </div>
+</div>

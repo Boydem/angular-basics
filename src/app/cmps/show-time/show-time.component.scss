@@ -1,0 +1,25 @@
+.show-time-container {
+  max-width: max-content;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  background-color: #f3f3f3;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  display: flex;
+  &.dark {
+    color: #fff;
+    background-color: #2b2b2b;
+  }
+  .meta {
+    padding: 2rem;
+    *:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+  .clock {
+    text-align: start;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
